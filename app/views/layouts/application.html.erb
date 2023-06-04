@@ -19,7 +19,6 @@
     <div>
     <p>
     <% if @current_user %>
-    Hi <%= @current_user["first_name"] %>
     <a href="/logout">Logout</a>
     <% else %>
     <a href="/users/new">Sign Up</a> or
