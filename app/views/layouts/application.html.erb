@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tacostagram Final</title>
+    <title>Kwitter</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -32,11 +32,15 @@
     </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container">
     <%= session["user_id"] %>
     </div>
     <div>
+      <% if flash["notice"] %>
+      <div class="alert alert-primary mt-3">
       <%= flash["notice"] %>
+      </div>
+      <% end %>
     </div>
     <div>
     </div>
