@@ -2,11 +2,10 @@
 
 <%= form_with :model => @place do |form| %>
  <div class="mb-3">
-  <p>
     <%= form.label "name" %>
     <%= form.text_field "name" %>
     </div>
-  </p>
+  
   <p>
     <%= form.submit "Create", :class => "btn btn-warning" %>
   </p>
