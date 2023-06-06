@@ -34,18 +34,6 @@
     </div>
     </nav>
 
-    <div class="container">
-    </div>
-    <div>
-      <% if flash["notice"] %>
-      <div class="alert alert-primary mt-3">
-      <%= flash["notice"] %>
-      </div>
-      <% end %>
-    </div>
-    <div>
-    </div>
-
     <%= yield %>
   </body>
 </html>
