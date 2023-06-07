@@ -1,8 +1,7 @@
-<<h1><%= @place["name"] %></h1>
+<h1><%= @place["name"] %></h1>
 
 <% if @current_user %>
 
-<h2>My Posts</h2>
 
 <div class="row">
 
@@ -16,7 +15,7 @@
 </div>
 
 <p>
-  <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
+  <a href="/posts/new?place_id=<%= @place["id"] %>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >New Post</a>
 </p>
 
 <p>

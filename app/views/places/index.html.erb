@@ -1,9 +1,9 @@
 <h1>Places</h1>
 
+<p>
+  <a href="/places/new" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >New place</a>
+</p>
+
   <% for place in @places %>
     <p><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></p>
   <% end %>
-
-<p>
-  <a href="/places/new">New place</a>
-</p>
