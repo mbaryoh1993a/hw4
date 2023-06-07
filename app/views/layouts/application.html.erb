@@ -25,7 +25,13 @@
     </span>
       <span class="navbar-text">
       <% if @current_user %>
-    <a href="/logout">Logout</a>
+
+
+
+   <%= session["user_id"] %> | 
+
+
+   <a href="/logout">Logout</a>
     <% else %>
     <a href="/users/new">Sign Up</a> |
     <a href="/login">Login</a>

@@ -12,6 +12,7 @@ class PlacesController < ApplicationController
     @place = Place.find_by({ "id" => params["id"] })
     @posts = Post.where({ "place_id" => @place["id"] })
     @posts = Post.where({ "user_id" => @current_user["id"] })
+    @posts = Post.where({ "username" => @current_user["username"] })
   end
 
   def new
